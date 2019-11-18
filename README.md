@@ -14,7 +14,10 @@ defaultConfig {
 3. go to buid.gradle(:Project Name) and add:
 
 dependencies {
-    classpath 'com.android.tools.build:gradle:3.2.0-alpha18'
+    //classpath 'com.android.tools.build:gradle:3.2.0-alpha18' // ** This will cause DUPLICATE files once Firebase is added **
+    // ** This is what works: https://stackoverflow.com/a/58408519/4833705**
+
+    classpath 'com.android.tools.build:gradle:3.4.2'
 }
 
 4. Inside MainActivity import these libraries:

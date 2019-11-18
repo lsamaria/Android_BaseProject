@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     // Note: Button Clicks
     private fun myButtonPressed() {
 
-        Log.d(TAG, "myButton was pressed")
+        Log.d(TAG, " 123 myButton was pressed")
 
         rollDice()
     }
